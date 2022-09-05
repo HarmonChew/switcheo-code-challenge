@@ -19,6 +19,7 @@ function App() {
   const [OTPMessage, setOTPMessage] = useState("");
   const [OTPShake, setOTPShake] = useState(false);
 
+  //form validation
   const handleChange = (e) => {
     setFormValue((prevState) => {
       return {
@@ -114,12 +115,6 @@ function App() {
       setOTPMessage("");
     }
   };
-
-  // useEffect(() => {
-  //   setAddressShake(false);
-  //   setNumberShake(false);
-  //   setOTPShake(false);
-  // }, [OTPShake, addressShake, numberShake]);
 
   return (
     <div className="container">
